@@ -18,9 +18,3 @@ sed -e 's/<td align="left" >.*\.html">//g' -e 's#</a>[</strong>]*<<THANG> *<td a
 #6th --------------------------- Height and Weight
 #7th --------------------------- Weight and Birth Date
 #8th --------------------------- Birth and College
-
-
-
-
-
-name="ControlGroupSearchView$ButtonSubmit"
