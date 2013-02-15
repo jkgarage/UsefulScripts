@@ -1,0 +1,15 @@
+REM This script counts to 1200 seconds (ie. 20minutes) and auto shutdown your desktop
+ping -n 600 127.0.0.1 > /null & shutdown /s /t 600
+
+REM ******** Explanation *******
+
+REM ping -n 600 127.0.0.1 > /null
+REM     This is a trick to force the script to "wait" for 600 .
+REM     each ping will take 1s, so ping-ing to local 600 times will take 600 seconds
+REM     The redirection '> /null' is to avoid the command screen from being flooded with ping outputs
+
+REM & : to indicate the next command 'shutdown' will be executed only after 'ping' completes
+
+REM shutdown : /s option is to shutdown
+REM            /t option is to indicate the delay . The script delay shutdown by 600 seconds
+REM            Note, /t only accepts value upto 600 seconds.
